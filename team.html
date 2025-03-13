@@ -5,37 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team - ImmunOmicsAI Lab</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="lab_logo.png" alt="ImmunOmicsAI Lab Logo">
-        <h1>Our Team</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header style="text-align: center; padding: 20px; background: white;">
+        <img src="lab_logo.png" alt="ImmunOmicsAI Lab Logo" style="width: 120px;">
+        <h1 style="color: #2c5aa0; margin: 10px 0 5px;">Lab Members</h1>
     </header>
+    <nav style="background: rgba(220, 235, 255, 0.9); padding: 10px; text-align: center; border-radius: 8px; margin: 10px auto; width: 90%;">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
+            <li style="display: inline;"><a href="index.html" style="color: #2c5aa0; font-weight: bold; text-decoration: none;">🏠 Home</a></li>
+            <li style="display: inline;"><a href="research.html" style="color: #2c5aa0; font-weight: bold; text-decoration: none;">🔬 Research</a></li>
+            <li style="display: inline;"><a href="publications.html" style="color: #2c5aa0; font-weight: bold; text-decoration: none;">📄 Publications</a></li>
+            <li style="display: inline;"><a href="team.html" style="color: #2c5aa0; font-weight: bold; text-decoration: none;">👥 Team</a></li>
+            <li style="display: inline;"><a href="contact.html" style="color: #2c5aa0; font-weight: bold; text-decoration: none;">📩 Contact</a></li>
+        </ul>
+    </nav>
 
     <section id="team-overview">
         <h2>Meet Our Team</h2>
         <p>Our lab brings together a diverse group of scientists passionate about immunology, AI, and precision medicine. From computational experts to molecular biologists, we work together to push the boundaries of immune research.</p>
-        <p><a href="index.html" class="back-to-home">← Back to Home</a></p>
     </section>
 
     <section id="pi" class="team-section">
         <h2>Principal Investigator</h2>
-        <div class="team-member">
-            <img src="fan_yang.jpg" alt="Fan Yang" class="profile-img">
+        <div class="team-member" style="text-align: center;">
+            <img src="fan_yang.png" alt="Fan Yang" class="profile-img" style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%;">
             <div class="member-info">
-                <h3>Fan Yang</h3>
-                <p><strong>Principal Investigator/Professor</strong></p>
+                
+<p><strong>Principal Investigator / Professor</strong></p>
+                
+<p>Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences</p>
                 <div class="icon-container">
                     <a href="personal-profile.html" class="bio-button"><img src="bio_icon.png" alt="BIO"></a>
-                    <a href="mailto:f.yang@siat.ac.cn"><img src="email_icon.png" alt="Email"></a>
+                    <a href="mailto:f.yang1@siat.ac.cn"><img src="email_icon.png" alt="Email"></a>
                 </div>
             </div>
         </div>
@@ -45,22 +61,14 @@
         <h2>Postdoctoral Researchers</h2>
         <div class="team-grid">
             <div class="team-member">
-                <img src="zhenzhen_jiang.jpg" alt="Zhenzhen Jiang" class="profile-img">
+                <img src="zhenzhen_jiang.jpg" alt="Zhenzhen Jiang">
                 <h3>Zhenzhen Jiang</h3>
                 <p>Postdoctoral Researcher</p>
-                <div class="icon-container">
-                    <a href="#" class="bio-button"><img src="bio_icon.png" alt="BIO"></a>
-                    <a href="mailto:zhenzhen.jiang@example.com"><img src="email_icon.png" alt="Email"></a>
-                </div>
             </div>
             <div class="team-member">
-                <img src="Hua_Yang.png" alt="Hua Yang" class="profile-img">
+                <img src="hua_yang.jpg" alt="Hua Yang">
                 <h3>Hua Yang</h3>
                 <p>Postdoctoral Researcher</p>
-                <div class="icon-container">
-                    <a href="#" class="bio-button"><img src="bio_icon.png" alt="BIO"></a>
-                    <a href="mailto:hua.yang@example.com"><img src="email_icon.png" alt="Email"></a>
-                </div>
             </div>
         </div>
     </section>
@@ -69,31 +77,60 @@
         <h2>Graduate Students</h2>
         <div class="team-grid">
             <div class="team-member">
-                <img src="xiaolin_jin.jpg" alt="Xiaolin Jin" class="profile-img">
+                <img src="xiaolin_jin.jpg" alt="Xiaolin Jin">
                 <h3>Xiaolin Jin</h3>
-                <p>Ph.D. Student</p>
-                <div class="icon-container">
-                    <a href="#" class="bio-button"><img src="bio_icon.png" alt="BIO"></a>
-                    <a href="mailto:xiaolin.jin@example.com"><img src="email_icon.png" alt="Email"></a>
-                </div>
+                <p>Ph.D. Student in Biochemistry and Molecular Biology</p>
             </div>
             <div class="team-member">
-                <img src="tao_liu.jpg" alt="Tao Liu" class="profile-img">
+                <img src="tao_liu.jpg" alt="Tao Liu">
                 <h3>Tao Liu</h3>
-                <p>Master Student</p>
-                <div class="icon-container">
-                    <a href="#" class="bio-button"><img src="bio_icon.png" alt="BIO"></a>
-                    <a href="mailto:tao.liu@example.com"><img src="email_icon.png" alt="Email"></a>
-                </div>
+                <p>Master Student in Computational Biology</p>
             </div>
             <div class="team-member">
-                <img src="chao_ding.jpg" alt="Chao Ding" class="profile-img">
-                <h3>Chao Ding</h3>
-                <p>Master Student</p>
-                <div class="icon-container">
-                    <a href="#" class="bio-button"><img src="bio_icon.png" alt="BIO"></a>
-                    <a href="mailto:chao.ding@example.com"><img src="email_icon.png" alt="Email"></a>
-                </div>
+                <img src="chao_ding.jpg" alt="Chao Ding">
+                <h3>Tao Liu</h3>
+                <p>Master Student in Pediatrics (Hematology & Oncology)</p>
+            </div>
+            <div class="team-member">
+                <img src="jiayi_tan.jpg" alt="Jiayi Tan">
+                <h3>Jiayi Tan</h3>
+                <p>Master Student in Biotechnology and Engineering</p>
+            </div>
+            <div class="team-member">
+                <img src="shihao_jia.jpg" alt="Shihao Jia">
+                <h3>Shihao Jia</h3>
+                <p>Master Student in Biomedicine and Pharmacy</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="research-assistants" class="team-section">
+        <h2>Research Assistants</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="haiyan_lu.jpg" alt="Haiyan Lu">
+                <h3>Haiyan Lu</h3>
+                <p>Research Assistant - Immune Regulation</p>
+            </div>
+            <div class="team-member">
+                <img src="hengdong_he.jpg" alt="Hengdong He">
+                <h3>Hengdong He</h3>
+                <p>Research Assistant - Single-cell Multi-omics</p>
+            </div>
+            <div class="team-member">
+                <img src="jiayu_liu.jpg" alt="Jiayu Liu">
+                <h3>Jiayu Liu</h3>
+                <p>Research Assistant - Bioinformatics</p>
+            </div>
+            <div class="team-member">
+                <img src="yiyao_shan.jpg" alt="Yiyao Shan">
+                <h3>Yiyao Shan</h3>
+                <p>Research Assistant - Molecular Biology</p>
+            </div>
+            <div class="team-member">
+                <img src="shuying_su.jpg" alt="Shuying Su">
+                <h3>Shuying Su</h3>
+                <p>Research Assistant - Bioinformatics Analysis</p>
             </div>
         </div>
     </section>
